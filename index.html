@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Privacy Policy for Minimal Widgets, an Android clock, calendar, battery, and upcoming-events widget app by Bereluma Digital." />
+  <title>Minimal Widgets — Privacy Policy | Bereluma Digital</title>
+  <style>
+    :root { --night:#071522; --surface:#102638; --surface2:#0b1c2b; --line:#274257; --teal:#00dcc8; --teal-soft:#8debe2; --text:#f4f8fa; --muted:#a9bbc7; --max:1060px; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; background: var(--night); color:var(--text); font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; font-size:16px; line-height:1.72; -webkit-font-smoothing: antialiased; }
+    body::before {content:""; position:fixed; inset:0 0 auto 0; height:540px; pointer-events:none; background:radial-gradient(ellipse 48% 58% at 84% 0%,rgba(0,220,200,.10),transparent 75%); z-index:-1;}
+    a { color:var(--teal-soft); text-underline-offset:3px; }
+    a:hover { color:#fff; }
+    a:focus-visible { outline:3px solid var(--teal); outline-offset:4px; border-radius:3px; }
+    .shell { max-width:var(--max); margin:0 auto; padding:0 32px; }
+    .topbar { border-bottom:1px solid rgba(137,180,196,.15); }
+    .nav { min-height:76px; display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .brand { display:flex; align-items:center; gap:14px; text-decoration:none; color:var(--text); font-weight:700; letter-spacing:.13em; font-size:13px; }
+    .mark { display:grid; place-items:center; width:40px; height:40px; border:1px solid rgba(0,220,200,.55); border-radius:11px; background:#102c39; color:var(--teal); font-size:22px; font-weight:650; letter-spacing:-.09em; padding-right:3px; }
+    .nav-tag { color:var(--muted); font-size:12px; font-weight:600; letter-spacing:.07em; text-transform:uppercase; }
+    .hero { padding:80px 0 50px; border-bottom:1px solid rgba(137,180,196,.16); }
+    .eyebrow { color:var(--teal); font-size:12px; font-weight:750; text-transform:uppercase; letter-spacing:.20em; margin:0 0 18px; }
+    h1 { font-size:clamp(38px,6vw,66px); line-height:1.09; font-weight:670; letter-spacing:-.055em; max-width:780px; margin:0 0 22px; }
+    .lead { max-width:760px; color:#c0cfd7; font-size:18px; line-height:1.75; margin:0 0 28px; }
+    .meta { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+    .chip { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border:1px solid rgba(0,220,200,.26); color:var(--teal-soft); background:rgba(0,220,200,.06); font-size:12px; font-weight:650; border-radius:100px; }
+    .dot { width:7px; height:7px; background:var(--teal); border-radius:50%; }
+    .updated { color:var(--muted); font-size:13px; }
+    .layout { display:grid; grid-template-columns: 230px minmax(0,1fr); gap:64px; padding-top:54px; padding-bottom:96px; }
+    aside { align-self:start; position:sticky; top:28px; }
+    .side-title { font-size:11px; text-transform:uppercase; letter-spacing:.17em; font-weight:750; color:#7895a6; margin-bottom:16px; }
+    .toc { margin:0; padding:0; list-style:none; display:grid; gap:4px; }
+    .toc a { display:block; padding:8px 12px; margin-left:-12px; text-decoration:none; font-size:14px; color:var(--muted); border-radius:8px; }
+    .toc a:hover,.toc a:focus-visible { background:rgba(0,220,200,.07); color:var(--teal-soft); }
+    main { min-width:0; }
+    section { scroll-margin-top:32px; margin-bottom:46px; }
+    h2 { font-size:22px; letter-spacing:-.025em; line-height:1.25; margin:0 0 15px; }
+    h3 { font-size:16px; margin:18px 0 6px; }
+    p { margin:0 0 15px; color:#ccd8df; }
+    p:last-child { margin-bottom:0; }
+    ul { margin:10px 0 0 0; padding-left:22px; color:#ccd8df; }
+    li { padding-left:4px; margin-bottom:8px; }
+    li::marker { color:var(--teal); }
+    .summary { padding:25px 27px; margin:0 0 44px; border:1px solid rgba(0,220,200,.35); background:linear-gradient(120deg,rgba(0,220,200,.085),rgba(16,38,56,.42)); border-radius:17px; }
+    .summary h2 { color:var(--teal-soft); font-size:17px; margin-bottom:10px; }
+    .summary p { color:var(--text); }
+    .rule { border:0; height:1px; background:rgba(137,180,196,.15); margin:0 0 45px; }
+    .contact-card { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:23px; }
+    .email { overflow-wrap:anywhere; font-weight:650; }
+    .footer { border-top:1px solid rgba(137,180,196,.16); padding:30px 0 46px; }
+    .footer-inner { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; color:#93aab8; font-size:12px; }
+    .footer a { text-decoration:none; }
+    @media(max-width:760px) {
+      .shell {padding:0 22px;}
+      .nav {min-height:68px;}
+      .nav-tag {display:none;}
+      .hero {padding:54px 0 40px;}
+      .lead {font-size:16px;}
+      .layout {display:block; padding-top:36px; padding-bottom:62px;}
+      aside {position:static; border-bottom:1px solid rgba(137,180,196,.15); padding-bottom:25px; margin-bottom:32px;}
+      .toc {grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 12px;}
+      .summary {padding:20px;}
+    }
+    @media(prefers-reduced-motion:reduce) {html {scroll-behavior:auto;}}
+    @media print {
+      :root {--text:#161b20;--muted:#48505a;--teal:#08786f;--teal-soft:#08786f;--line:#aebfc8;--surface:#fff;}
+      body {background:#fff;color:#161b20;}
+      body::before,aside,.nav-tag {display:none;}
+      .topbar, .footer {border-color:#ddd;}
+      .hero {padding:24px 0;}
+      h1 {font-size:32px;}
+      .layout {display:block;padding:25px 0;}
+      p, ul, .lead {color:#333;}
+      .summary {background:#fff;border-color:#888;}
+      .summary p {color:#222;}
+      .brand {color:#222;}
+      section {break-inside:avoid;}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="#top" aria-label="Bereluma Digital home"><span class="mark" aria-hidden="true">B</span><span>BERELUMA DIGITAL</span></a>
+      <span class="nav-tag">Minimal Widgets · Android</span>
+    </div>
+  </header>
+
+  <div class="shell hero" id="top">
+    <p class="eyebrow">Transparency by design</p>
+    <h1>Privacy, kept simple.</h1>
+    <p class="lead">This is the privacy policy for <strong>Minimal Widgets</strong>, a home-screen clock, calendar, upcoming-events, and battery widget application published under the developer name <strong>Bereluma Digital</strong>.</p>
+    <div class="meta">
+      <span class="chip"><span class="dot" aria-hidden="true"></span> On-device features</span>
+      <span class="updated">Effective November 15, 2026 · Last updated November 15, 2026</span>
+    </div>
+  </div>
+
+  <div class="shell layout">
+    <aside aria-label="Policy contents">
+      <div class="side-title">On this page</div>
+      <nav>
+        <ul class="toc">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#calendar">Calendar access</a></li>
+          <li><a href="#device">Battery and preferences</a></li>
+          <li><a href="#sharing">Data collection and sharing</a></li>
+          <li><a href="#external">External calendar apps</a></li>
+          <li><a href="#payments">Support payments</a></li>
+          <li><a href="#choices">Your choices</a></li>
+          <li><a href="#security">Security and retention</a></li>
+          <li><a href="#children">Children's privacy</a></li>
+          <li><a href="#updates">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main id="main-content">
+      <div class="summary" role="note">
+        <h2>Privacy at a glance</h2>
+        <p>Minimal Widgets processes calendar information, battery status, and customization preferences <strong>on your device</strong>. Based on the current app implementation, we do not transmit this information to Bereluma Digital servers, and the app does not include advertising or analytics SDKs.</p>
+      </div>
+
+      <section id="overview">
+        <h2>1. Overview</h2>
+        <p>Bereluma Digital is the developer name used for Minimal Widgets (Android package name <strong>com.minimalwidgets.midnight</strong>). This policy explains what information the app can access, why it accesses that information, and how you can control it.</p>
+        <p>Minimal Widgets does not require an app account or sign-in to use its current features.</p>
+      </section>
+
+      <section id="calendar">
+        <h2>2. Calendar information</h2>
+        <p>If you grant Android's calendar permission, Minimal Widgets can read calendar information on your device to show dates, event indicators, appointment titles, event times, and locations when available in the calendar and agenda features.</p>
+        <ul>
+          <li><strong>Permission:</strong> Android's <code>READ_CALENDAR</code> permission.</li>
+          <li><strong>Purpose:</strong> To render your selected calendars in the home-screen widget and daily agenda.</li>
+          <li><strong>Processing:</strong> Calendar entries are retrieved from Android's calendar provider and used locally on your device. The app does not send their contents to our servers.</li>
+          <li><strong>Control:</strong> You can choose which calendars appear and revoke calendar permission in Android Settings. Calendar event features may stop working without permission.</li>
+        </ul>
+      </section>
+
+      <section id="device">
+        <h2>3. Battery information and settings</h2>
+        <p>The Battery widget reads the device's battery percentage and charging status to display them on your home screen. Clock and widget settings—such as layouts, colors, borders, and selected calendars—are stored locally on your device.</p>
+        <p>We do not use this device information for profiling or advertising.</p>
+      </section>
+
+      <section id="sharing">
+        <h2>4. Data collection and sharing</h2>
+        <p>In the current version of Minimal Widgets, Bereluma Digital does not collect user information by transmitting it off the device, and we do not sell or share calendar contents, battery readings, or widget preferences with advertisers or data brokers.</p>
+        <p>The current app does not integrate third-party advertising or analytics software development kits. Android and Google Play may process information in connection with operating the device, distributing the app, and providing their own services under their separate privacy policies.</p>
+      </section>
+
+      <section id="external">
+        <h2>5. Opening another calendar application</h2>
+        <p>If you tap a date or appointment, Minimal Widgets can request that Android open a compatible installed calendar application, such as Samsung Calendar or Google Calendar. That external app is operated by its own provider and is subject to its own privacy practices.</p>
+        <p>Minimal Widgets does not separately upload calendar entries to Bereluma Digital when you open an external calendar application.</p>
+      </section>
+
+      <section id="payments">
+        <h2>6. Optional support payments</h2>
+        <p>As of the effective date of this policy, the Support Development screen displays proposed voluntary contribution amounts, but payments are <strong>not enabled</strong> in Minimal Widgets.</p>
+        <p>If in-app contributions are introduced later, we will update this policy as appropriate before activating payments. Any future payment processing will be described in the applicable version of this policy and in Google Play's purchase interface.</p>
+      </section>
+
+      <section id="choices">
+        <h2>7. Your choices and controls</h2>
+        <ul>
+          <li>Grant or revoke calendar permission through Android Settings.</li>
+          <li>Select which calendars are displayed through Minimal Widgets settings.</li>
+          <li>Adjust or remove widgets from your home screen at any time.</li>
+          <li>Clear the app's local storage in Android Settings or uninstall the app to remove locally stored Minimal Widgets preferences.</li>
+        </ul>
+        <p>Clearing Minimal Widgets data does not itself delete events stored in your calendar provider.</p>
+      </section>
+
+      <section id="security">
+        <h2>8. Security and data retention</h2>
+        <p>The app uses Android's permission and app-storage mechanisms for its local functionality. Calendar entries are accessed through Android's calendar provider, and customization preferences remain stored locally until cleared or removed by the user.</p>
+        <p>Because we do not operate a server receiving your calendar information or battery readings, Bereluma Digital does not maintain a remote copy of that information to retain or delete.</p>
+      </section>
+
+      <section id="children">
+        <h2>9. Children's privacy</h2>
+        <p>Minimal Widgets is designed for a general audience aged 13 and older, and is not directed toward children under 13. We do not knowingly collect personal information from children through the current app.</p>
+      </section>
+
+      <section id="updates">
+        <h2>10. Updates to this policy</h2>
+        <p>We may revise this policy if Minimal Widgets adds features or changes how information is handled. Material changes will be reflected here with an updated effective or revision date. Users should review this page when an app update introduces new functionality, including potential payment features.</p>
+      </section>
+
+      <section id="contact">
+        <h2>11. Contact</h2>
+        <div class="contact-card">
+          <p>For privacy questions about Minimal Widgets, contact the developer:</p>
+          <p><strong>Bereluma Digital</strong><br /><a class="email" href="mailto:berelumadigital@gmail.com">berelumadigital@gmail.com</a></p>
+        </div>
+      </section>
+      <hr class="rule" />
+      <p style="font-size:13px;color:var(--muted)">This policy reflects the Android application implementation reviewed for release preparation in November 2026. It must be reviewed and updated before publication if the app changes, including the introduction of third-party SDKs, new permissions, or in-app purchases.</p>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="shell footer-inner"><span>© 2026 Bereluma Digital · Minimal Widgets</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>

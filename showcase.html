@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="dark">
   <meta name="description" content="Minimal Widgets by Bereluma Digital. Beautiful, customizable Android home-screen clocks, calendars and battery widgets. Apply to join the closed beta.">
   <meta property="og:title" content="Minimal Widgets — Make space for what matters">
-  <meta property="og:description" content="Refined Android home-screen widgets. Discover the Clock, Calendar and Battery collection and request closed beta access.">
+  <meta property="og:description" content="See Minimal Widgets on a real Android home screen. Explore Clock, Calendar, Battery and Upcoming previews, then request closed beta access.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://berelumadigital-lab.github.io/minimal-widgets-privacy/showcase.html">
   <title>Minimal Widgets — Beautiful Android Home Screen Widgets | Bereluma Digital</title>
@@ -177,6 +177,60 @@
     @media(max-width:600px){.wrap{width:min(calc(100% - 36px),var(--max))}.nav{min-height:68px}.nav-cta{padding:10px 12px;font-size:12px}.logo-title{font-size:11px;letter-spacing:.12em}.logo-sub{font-size:8px}.logo-mark{width:34px;height:34px}.hero{padding-top:58px}.eyebrow{font-size:10px}.hero-intro{font-size:15px}h1{font-size:clamp(46px,10vw,65px)}.hero-visual{height:535px;transform:scale(.82);margin:-27px -28px -32px}.float-one{right:0}.float-two{left:1px}.value-strip{grid-template-columns:1fr;gap:0}.value{border-right:0;border-bottom:1px solid var(--line);justify-content:flex-start;padding:15px 8px}.value:last-child{border:0}.section{padding:65px 0}.section-head{display:block}.section-head .caption-note{margin-top:13px}.tabs{width:100%;justify-content:space-between}.tab{flex:1;padding:10px 8px;font-size:12px}.accent-area{width:100%;justify-content:flex-start}.gallery-panel{border-radius:20px}.gallery-stage{min-height:330px;padding:22px}.demo-widget{padding:22px;min-height:210px}.gallery-copy{padding:27px 25px 31px}.gallery-copy h3{font-size:26px}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:auto;padding:25px}.beta-shell{padding:27px 23px}.beta-left h2{font-size:37px}.faq-section{padding-bottom:70px}.footer-row{align-items:flex-start}.foot-links{gap:14px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
     @media print{.announce,.site-header,.hero-visual,.gallery-controls,.btn,.foot-links{display:none}.hero{min-height:auto}.section,.beta-section{padding:25px 0}.gallery-panel,.beta-shell{display:block}body{background:#fff;color:#16232b}.section-description,.feature-card p,.gallery-copy p,.beta-left p{color:#374f5c}}
+
+    /* v2: real screenshots, compact vertical rhythm, and refined responsive layout */
+    .hero{min-height:620px;padding:55px 0 49px}
+    .hero-visual.hero-real{height:570px;display:flex;align-items:center;justify-content:center}
+    .hero-visual.hero-real:before{width:390px;height:390px}
+    .hero-phone{width:290px;height:535px;border:7px solid #1a3543;border-radius:38px;overflow:hidden;background:#081724;box-shadow:0 34px 90px rgba(0,0,0,.48),0 0 0 1px rgba(197,232,238,.07);transform:rotate(-4deg);position:relative}
+    .hero-phone img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+    .hero-pill{position:absolute;top:65px;right:0;background:#102c37;border:1px solid rgba(0,220,200,.34);border-radius:50px;padding:12px 16px;color:#a7ede5;font-size:10px;letter-spacing:.13em;font-weight:800;box-shadow:0 20px 45px rgba(0,0,0,.3);transform:rotate(3deg)}
+    .hero-pill-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--teal);margin-left:9px;vertical-align:1px}
+    .real-section{padding:75px 0 70px}
+    .real-head{margin-bottom:28px}
+    .real-caption{font-size:12px;color:#88a5b3;white-space:nowrap}
+    .real-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .real-card{background:linear-gradient(155deg,#10293b,#0a1c29);border:1px solid var(--line);border-radius:22px;overflow:hidden;margin:0;transition:border-color .2s,transform .2s;min-width:0}
+    .real-card:hover{border-color:rgba(0,220,200,.4);transform:translateY(-3px)}
+    .real-image{height:390px;display:flex;align-items:flex-start;justify-content:center;padding:24px 24px 0;background:radial-gradient(circle at 50% 30%,rgba(0,220,200,.075),transparent 60%),#0a1b2a;overflow:hidden}
+    .real-violet .real-image{background:radial-gradient(circle at 50% 30%,rgba(198,153,255,.1),transparent 60%),#0a1b2a}
+    .real-ocean .real-image{background:radial-gradient(circle at 50% 30%,rgba(75,155,245,.11),transparent 60%),#0a1b2a}
+    .real-image img{max-width:95%;height:auto;width:265px;border-radius:20px 20px 0 0;box-shadow:0 19px 44px rgba(0,0,0,.35);border:4px solid #1c3543;border-bottom:0;display:block}
+    .real-card figcaption{display:flex;align-items:center;gap:14px;padding:20px 19px;min-height:82px}
+    .real-card-number{align-self:flex-start;font-size:11px;color:var(--teal);letter-spacing:.08em;padding-top:3px}
+    .real-card figcaption div{display:flex;flex:1;flex-direction:column;gap:3px}
+    .real-card figcaption strong{font-size:15px;font-weight:700;color:#f1f8f9}
+    .real-card figcaption div span{font-size:12px;color:#8da9b7}
+    .real-arrow{font-size:17px;color:#72d4cc}
+    /* Upcoming: complete, readable web presentation of the widget's Android test UI */
+    .upcoming-teaser{margin-top:22px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(110deg,#10293a,#0a1d2a);padding:36px 38px;display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:38px;align-items:center}
+    .upcoming-copy h3{font-size:27px;letter-spacing:-.04em;line-height:1.22;margin:11px 0 12px}
+    .upcoming-copy p{font-size:13px;line-height:1.7;color:#9ab4c1;max-width:470px}
+    .teaser-tag{font-size:10px;letter-spacing:.15em;color:var(--teal);font-weight:800}
+    .quiet-link{display:inline-flex;gap:8px;font-size:12px;font-weight:700;color:var(--teal);padding:8px 0}
+    .upcoming-preview{width:100%;max-width:570px;min-width:0;margin-left:auto}
+    .upcoming-window{min-height:330px;background:#102638;border:2px solid #547584;outline:1px solid rgba(185,224,231,.09);outline-offset:4px;border-radius:24px;box-shadow:0 20px 48px rgba(0,0,0,.28);padding:22px 26px 25px}
+    .upcoming-window-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:23px}
+    .upcoming-window-title{color:#62dcd2;font-size:14px;font-weight:800;letter-spacing:.035em}
+    .upcoming-refresh{color:#58d9d0;display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px}
+    .upcoming-refresh svg{width:24px;height:24px}
+    .upcoming-events{list-style:none;padding:0;margin:0;display:grid;gap:17px}
+    .upcoming-events li{margin:0;padding:0}
+    .upcoming-date{color:#66d9d0;font-size:13px;line-height:1.3;font-weight:650}
+    .upcoming-event-name{display:block;margin-top:3px;color:#f1f7fa;font-size:19px;line-height:1.26;font-weight:650;letter-spacing:-.015em}
+    .upcoming-caption{margin:13px 5px 0;color:#8da9b7;font-size:11px;line-height:1.5}
+    @media(max-width:900px){.upcoming-teaser{grid-template-columns:1fr;gap:26px}.upcoming-preview{max-width:640px;margin:0}.upcoming-window{min-height:312px}}
+    @media(max-width:600px){.upcoming-teaser{padding:24px 21px;gap:22px}.upcoming-window{min-height:304px;padding:19px 20px 23px;border-radius:20px}.upcoming-window-head{margin-bottom:20px}.upcoming-window-title{font-size:12px}.upcoming-events{gap:16px}.upcoming-event-name{font-size:17px}.upcoming-date{font-size:12px}}
+    .screens-note{font-size:11px;color:#7895a4;margin:17px 0 0}
+    .section{padding:70px 0 62px}
+    .feature-card{min-height:198px;padding:26px}
+    .feature-icon{margin-bottom:18px}
+    .beta-section{padding-top:31px;padding-bottom:68px}
+    .faq-section{padding-bottom:75px}
+    @media(max-width:1070px){.hero-pill{right:5px}.hero-visual.hero-real{transform:none}}
+    @media(max-width:830px){.hero{min-height:auto;padding:55px 0 40px}.hero-visual.hero-real{height:495px;transform:none}.hero-phone{height:455px;width:250px}.hero-pill{right:10%;top:45px}.real-grid{gap:12px}.real-image{height:340px;padding:17px 12px 0}.real-image img{width:225px}.upcoming-teaser{gap:22px;padding:26px}}
+    @media(max-width:600px){.hero-visual.hero-real{height:465px;margin:0;transform:none}.hero-phone{width:236px;height:433px}.hero-pill{right:0;top:27px;font-size:8px}.real-section{padding:57px 0 47px}.real-grid{grid-template-columns:1fr;gap:14px}.real-image{height:370px}.real-image img{width:248px}.real-card figcaption{min-height:75px}.real-caption{display:block;margin-top:12px}.upcoming-copy h3{font-size:25px}.section{padding:56px 0}.beta-section{padding-top:17px;padding-bottom:60px}}
+
   </style>
 </head>
 <body>
@@ -188,7 +242,7 @@
       <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M4.5 22V6.5h4l5.5 7.8 5.5-7.8h4V22h-4.2v-8.9L14 20.1l-5.3-7V22H4.5Z" fill="currentColor"/></svg></span>
       <span><span class="logo-title">MINIMAL WIDGETS</span><span class="logo-sub">BY BERELUMA DIGITAL</span></span>
     </a>
-    <nav class="nav-links" aria-label="Main navigation"><a href="#gallery">Widget gallery</a><a href="#features">Features</a><a href="#beta">Beta testing</a><a href="./">Privacy</a></nav>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#screenshots">Real screenshots</a><a href="#features">Features</a><a href="#beta">Beta testing</a><a href="./">Privacy</a></nav>
     <a class="nav-cta" href="#beta">Join the beta <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
   </div>
 </header>
@@ -200,49 +254,78 @@
       <p class="hero-intro">Beautifully simple clocks, calendars, and essentials for your Android home screen. Thoughtful details. Quiet colors. Just what you need, right where you need it.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#beta">Become a beta tester <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-        <a class="btn btn-secondary" href="#gallery">Explore the widgets</a>
+        <a class="btn btn-secondary" href="#screenshots">See real screenshots</a>
       </div>
       <div class="hero-notes">
         <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M10 18h4"/></svg> Made for Android</span>
         <span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 12V7l-8-4-8 4v5c0 5 3 8 8 10 5-2 8-5 8-10Z"/><path d="m9 12 2 2 4-4"/></svg> Privacy-conscious design</span>
       </div>
     </div>
-    <div class="hero-visual" aria-label="Illustrative Android home screen displaying Minimal Widgets clock, agenda and battery designs">
-      <div class="phone">
-        <div class="phone-status"><span>10:42</span><span class="signal"><svg aria-hidden="true" width="13" height="10" viewBox="0 0 13 10" fill="currentColor"><path d="M1 8h2V6H1zm3 0h2V4H4zm3 0h2V2H7zm3 0h2V0h-2z"/></svg><span class="tiny-battery"><i></i></span></span></div>
-        <div class="phone-content">
-          <p class="phone-label">MONDAY · NOVEMBER 16</p>
-          <div class="mini-widget">
-            <div class="mini-widget-label">MIDNIGHT CLOCK</div>
-            <div class="mini-time">10:42</div>
-            <div class="mini-date">Monday, November 16</div>
-          </div>
-          <div class="mini-widget">
-            <div class="mini-agenda-head"><strong>Today</strong><span>2 EVENTS</span></div>
-            <div class="mini-row"><span class="mini-pill"></span><span><strong>Team meeting</strong><small>11:30 AM – 12:00 PM</small></span></div>
-            <div class="mini-row"><span class="mini-pill" style="background:#8e80f8"></span><span><strong>Afternoon check-in</strong><small>3:00 PM – 3:30 PM</small></span></div>
-          </div>
-          <div class="mini-widget">
-            <div class="mini-widget-label">BATTERY</div>
-            <div class="mini-bat"><strong>86%</strong><svg aria-hidden="true" viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="#00dcc8" stroke-width="1.5"><rect x="2" y="6" width="18" height="12" rx="2"/><path d="M22 10v4"/><path d="m12 8-4 5h4l-1 3 5-6h-4l1-2"/></svg></div>
-            <div class="bar-outer"><div class="bar-inner"></div></div>
-          </div>
-        </div>
-        <span class="phone-home"></span>
+    <div class="hero-visual hero-real" aria-label="Real screenshot of Minimal Widgets running on Android">
+      <div class="hero-phone">
+        <img src="real-midnight.webp" width="560" height="945" alt="Actual Android test screenshot showing the teal clock, November calendar and coral battery widget" fetchpriority="high">
       </div>
-      <div class="float-chip float-one"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg> <span><strong>Designed to feel calm</strong></span></div>
-      <div class="float-chip float-two"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.6 5.4L20 11l-5.4 2.5L12 19l-2.6-5.5L4 11l5.4-2.6L12 3Z"/></svg> <span><strong>Your look.</strong> Your way.</span></div>
+      <div class="hero-pill">REAL ANDROID SCREENSHOTS <span class="hero-pill-dot" aria-hidden="true"></span></div>
     </div>
   </section>
   <div class="section-rule" role="presentation"></div>
   <div class="wrap value-strip" aria-label="Minimal Widgets highlights">
-    <div class="value"><span class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span><span><strong>3 essential widget types</strong><span>Clock · Calendar · Battery</span></span></div>
+    <div class="value"><span class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span><span><strong>Clock, Calendar &amp; Battery</strong><span>Plus Upcoming events in testing</span></span></div>
     <div class="value"><span class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 0-4 1.8 1.8 0 0 1 0-3h2a6 6 0 0 0 0-11h-3Z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="8" r="1"/></svg></span><span><strong>Thoughtful customization</strong><span>Fonts · Colors · Borders</span></span></div>
     <div class="value"><span class="value-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M10 18h4"/></svg></span><span><strong>Phone &amp; tablet friendly</strong><span>Clean layouts for different screens</span></span></div>
   </div>
   <div class="section-rule" role="presentation"></div>
+  <section class="wrap real-section" id="screenshots" aria-labelledby="screenshots-title">
+    <div class="section-head real-head">
+      <div>
+        <p class="sec-kicker">01 / Real devices. Real widgets.</p>
+        <h2 id="screenshots-title">See it on Android.</h2>
+        <p class="section-description">These are actual captures from our Android test build — not concept renders. Different layouts, accents and widget combinations, all designed to feel at home on your screen.</p>
+      </div>
+      <span class="real-caption">Captured on Android · November 2026</span>
+    </div>
+    <div class="real-grid">
+      <figure class="real-card real-teal">
+        <a class="real-image" href="real-midnight.webp" target="_blank" rel="noopener" aria-label="Open full-size Midnight teal screenshot">
+          <img src="real-midnight.webp" width="560" height="945" loading="lazy" alt="Midnight theme with teal clock at bottom, month calendar and coral battery indicator">
+        </a>
+        <figcaption><span class="real-card-number">01</span><div><strong>Midnight, refined</strong><span>Clock · Calendar · Battery</span></div><span class="real-arrow" aria-hidden="true">↗</span></figcaption>
+      </figure>
+      <figure class="real-card real-violet">
+        <a class="real-image" href="real-violet.webp" target="_blank" rel="noopener" aria-label="Open full-size violet screenshot">
+          <img src="real-violet.webp" width="560" height="864" loading="lazy" alt="Violet-accent horizontal clock, month calendar and coral battery indicator on an Android home screen">
+        </a>
+        <figcaption><span class="real-card-number">02</span><div><strong>Violet accents</strong><span>Alternate clock treatment</span></div><span class="real-arrow" aria-hidden="true">↗</span></figcaption>
+      </figure>
+      <figure class="real-card real-ocean">
+        <a class="real-image" href="real-ocean.webp" target="_blank" rel="noopener" aria-label="Open full-size ocean blue screenshot">
+          <img src="real-ocean.webp" width="560" height="892" loading="lazy" alt="Blue event dots and battery outline, violet clock and monthly calendar on Android">
+        </a>
+        <figcaption><span class="real-card-number">03</span><div><strong>Ocean blue</strong><span>One design, more personality</span></div><span class="real-arrow" aria-hidden="true">↗</span></figcaption>
+      </figure>
+    </div>
+    <div class="upcoming-teaser">
+      <div class="upcoming-copy"><span class="teaser-tag">CURRENTLY IN TESTING</span><h3>Keep your next event close.</h3><p>Bring your next appointments to the home screen, in the same calm visual language as your other widgets. This enlarged web preview is based on our Android test build; final details may evolve.</p><a href="#beta" class="quiet-link">Help test new features <span aria-hidden="true">→</span></a></div>
+      <div class="upcoming-preview">
+        <div class="upcoming-window" role="img" aria-label="Enlarged web recreation of the Android Upcoming widget, displaying three sample all-day November events">
+          <div class="upcoming-window-head">
+            <span class="upcoming-window-title">UPCOMING</span>
+            <span class="upcoming-refresh" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v5h-5"/><path d="M19 10a8 8 0 1 0 1 4"/></svg></span>
+          </div>
+          <ul class="upcoming-events">
+            <li><span class="upcoming-date">Wed, Nov 25 · All day</span><strong class="upcoming-event-name">Thanksgiving</strong></li>
+            <li><span class="upcoming-date">Thu, Nov 26 · All day</span><strong class="upcoming-event-name">Thanksgiving Day</strong></li>
+            <li><span class="upcoming-date">Thu, Nov 26 · All day</span><strong class="upcoming-event-name">Holiday reminder</strong></li>
+          </ul>
+        </div>
+        <p class="upcoming-caption">Enlarged web presentation based on an actual development screenshot.</p>
+      </div>
+    </div>
+    <p class="screens-note">The phone images above are actual Android screenshots. The Upcoming panel is a web presentation of the test design. Screenshots may contain test data; select an image to view it larger.</p>
+  </section>
+  <div class="section-rule" role="presentation"></div>
   <section class="wrap section" id="gallery" aria-labelledby="gallery-title">
-    <div class="section-head"><div><p class="sec-kicker">01 / The collection</p><h2 id="gallery-title">Every detail, considered.</h2><p class="section-description">The essentials, refined. Explore the designs and try the color choices below.</p></div><p class="caption-note">Interactive design previews · Not live screenshots</p></div>
+    <div class="section-head"><div><p class="sec-kicker">02 / Explore the styles</p><h2 id="gallery-title">Every detail, considered.</h2><p class="section-description">The essentials, refined. Explore the designs and try the color choices below.</p></div><p class="caption-note">Interactive design previews · Not live screenshots</p></div>
     <div class="gallery-controls">
       <div class="tabs" role="tablist" aria-label="Widget previews">
         <button class="tab" type="button" id="tab-clock" role="tab" aria-selected="true" aria-controls="widget-panel" data-tab="clock">Clock</button>
@@ -268,7 +351,7 @@
     </div>
   </section>
   <section class="wrap section" id="features" aria-labelledby="features-title">
-    <div class="section-head"><div><p class="sec-kicker">02 / Designed around you</p><h2 id="features-title">Simple. Not basic.</h2><p class="section-description">The difference is in the details: a consistent visual language and just enough flexibility to fit your everyday routine.</p></div></div>
+    <div class="section-head"><div><p class="sec-kicker">03 / Designed around you</p><h2 id="features-title">Simple. Not basic.</h2><p class="section-description">The difference is in the details: a consistent visual language and just enough flexibility to fit your everyday routine.</p></div></div>
     <div class="feature-grid">
       <article class="feature-card"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg></span><h3>Clocks with character</h3><p>Choose a style that reads beautifully, whether you prefer a compact clock or a bolder display.</p></article>
       <article class="feature-card"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-12 4h2m3 0h2"/></svg></span><h3>Your calendar, closer</h3><p>See dates and upcoming appointments without making your home screen feel busy.</p></article>
@@ -280,13 +363,13 @@
   </section>
   <section class="wrap beta-section" id="beta" aria-labelledby="beta-heading">
     <div class="beta-shell">
-      <div class="beta-left"><p class="sec-kicker">03 / Be part of the beginning</p><h2 id="beta-heading">Help shape what's next.</h2><p>We're preparing Minimal Widgets for a wider Android release. Try early builds, share your thoughts, and help us polish the details that matter.</p><a class="btn btn-primary" href="mailto:berelumadigital@gmail.com?subject=Minimal%20Widgets%20%E2%80%94%20Beta%20Tester%20Request&amp;body=Hello%20Bereluma%20Digital%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Minimal%20Widgets%20Android%20beta.%0A%0AThe%20Google%20account%20I%20use%20for%20Google%20Play%20is%3A%20%0AAndroid%20device%3A%20%0A%0AThank%20you!">Request beta access <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><p class="beta-disclaimer">This opens your email app. It does not automatically enroll you in Google Play testing.</p></div>
+      <div class="beta-left"><p class="sec-kicker">04 / Be part of the beginning</p><h2 id="beta-heading">Help shape what's next.</h2><p>We're preparing Minimal Widgets for a wider Android release. Try early builds, share your thoughts, and help us polish the details that matter.</p><a class="btn btn-primary" href="mailto:berelumadigital@gmail.com?subject=Minimal%20Widgets%20%E2%80%94%20Beta%20Tester%20Request&amp;body=Hello%20Bereluma%20Digital%2C%0A%0AI%27d%20like%20to%20request%20access%20to%20the%20Minimal%20Widgets%20Android%20beta.%0A%0AThe%20Google%20account%20I%20use%20for%20Google%20Play%20is%3A%20%0AAndroid%20device%3A%20%0A%0AThank%20you!">Request beta access <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a><p class="beta-disclaimer">This opens your email app. It does not automatically enroll you in Google Play testing.</p></div>
       <div class="beta-steps"><div class="step"><span class="step-number">01</span><div><h3>Request an invitation</h3><p>Send an email with the Google account you use in Google Play and the type of Android device you own.</p></div></div><div class="step"><span class="step-number">02</span><div><h3>Get approved for testing</h3><p>If a place is available, we'll provide the official Google Play closed-test opt-in instructions.</p></div></div><div class="step"><span class="step-number">03</span><div><h3>Install and explore</h3><p>After opting in with your approved Google account, use the Play Store testing link to install the beta.</p></div></div><div class="step"><span class="step-number">04</span><div><h3>Tell us what you think</h3><p>Send feedback on design, readability, widget sizes, or issues you encounter.</p></div></div></div>
     </div>
   </section>
-  <section class="wrap faq-section" id="faq" aria-labelledby="faq-heading"><div class="faq-layout"><div><p class="sec-kicker">04 / Good to know</p><h2 id="faq-heading">Questions?<br>Covered.</h2><p class="section-description">A few details before joining the Minimal Widgets beta.</p></div><div class="faq"><details><summary>Is the Minimal Widgets beta free?</summary><p>The current Minimal Widgets app is being tested as a free app. Participation in the closed beta does not require buying a paid widget.</p></details><details><summary>Can I install it right away?</summary><p>Not necessarily. This is a Google Play closed test. You'll first need to be accepted as a tester and opt in using the Google account approved for testing. We will send installation instructions when access is available.</p></details><details><summary>Will it work on my phone or tablet?</summary><p>Minimal Widgets is being developed for Android, with layouts designed for phones and tablets. Please include your device model in your request so we can better understand compatibility during testing.</p></details><details><summary>Does the app read my calendar?</summary><p>Calendar access is optional and controlled by Android permissions. If granted, the calendar and agenda widgets can use on-device calendar data. See our <a href="./#calendar">privacy policy</a> for the full explanation.</p></details><details><summary>How do I contact the developer?</summary><p>Email <a href="mailto:berelumadigital@gmail.com">berelumadigital@gmail.com</a>. For data-handling details, see our <a href="./#security">security and retention policy</a>.</p></details></div></div></section>
+  <section class="wrap faq-section" id="faq" aria-labelledby="faq-heading"><div class="faq-layout"><div><p class="sec-kicker">05 / Good to know</p><h2 id="faq-heading">Questions?<br>Covered.</h2><p class="section-description">A few details before joining the Minimal Widgets beta.</p></div><div class="faq"><details><summary>Is the Minimal Widgets beta free?</summary><p>The current Minimal Widgets app is being tested as a free app. Participation in the closed beta does not require buying a paid widget.</p></details><details><summary>Can I install it right away?</summary><p>Not necessarily. This is a Google Play closed test. You'll first need to be accepted as a tester and opt in using the Google account approved for testing. We will send installation instructions when access is available.</p></details><details><summary>Will it work on my phone or tablet?</summary><p>Minimal Widgets is being developed for Android, with layouts designed for phones and tablets. Please include your device model in your request so we can better understand compatibility during testing.</p></details><details><summary>Does the app read my calendar?</summary><p>Calendar access is optional and controlled by Android permissions. If granted, the calendar and agenda widgets can use on-device calendar data. See our <a href="./#calendar">privacy policy</a> for the full explanation.</p></details><details><summary>How do I contact the developer?</summary><p>Email <a href="mailto:berelumadigital@gmail.com">berelumadigital@gmail.com</a>. For data-handling details, see our <a href="./#security">security and retention policy</a>.</p></details></div></div></section>
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-row"><div><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M4.5 22V6.5h4l5.5 7.8 5.5-7.8h4V22h-4.2v-8.9L14 20.1l-5.3-7V22H4.5Z" fill="currentColor"/></svg></span><span><span class="logo-title">MINIMAL WIDGETS</span><span class="logo-sub">BY BERELUMA DIGITAL</span></span></a><p class="footer-note">Small details. Better everyday.</p></div><nav class="foot-links" aria-label="Footer navigation"><a href="#gallery">Widgets</a><a href="#features">Features</a><a href="#beta">Beta testing</a><a href="./">Privacy policy</a><a href="mailto:berelumadigital@gmail.com">Contact</a></nav></div><div class="footer-bottom"><span>© 2026 Bereluma Digital. All rights reserved.</span><span>Product and widget visuals are illustrative previews, not screenshots of a current release.</span></div></div></footer>
+<footer class="site-footer"><div class="wrap"><div class="footer-row"><div><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M4.5 22V6.5h4l5.5 7.8 5.5-7.8h4V22h-4.2v-8.9L14 20.1l-5.3-7V22H4.5Z" fill="currentColor"/></svg></span><span><span class="logo-title">MINIMAL WIDGETS</span><span class="logo-sub">BY BERELUMA DIGITAL</span></span></a><p class="footer-note">Small details. Better everyday.</p></div><nav class="foot-links" aria-label="Footer navigation"><a href="#gallery">Widgets</a><a href="#features">Features</a><a href="#beta">Beta testing</a><a href="./">Privacy policy</a><a href="mailto:berelumadigital@gmail.com">Contact</a></nav></div><div class="footer-bottom"><span>© 2026 Bereluma Digital. All rights reserved.</span><span>Product screenshots are from the current Android test build; interactive previews are illustrative.</span></div></div></footer>
 <script>
 (function(){
   'use strict';
